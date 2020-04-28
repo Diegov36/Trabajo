@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicamentos.TablasController">
+   <children>
+      <TableView fx:id="tabla" layoutX="4.0" layoutY="5.0" prefHeight="335.0" prefWidth="539.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="nombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="costo" prefWidth="77.0" text="Costo" />
+            <TableColumn fx:id="direccion" prefWidth="77.0" text="Direccion" />
+            <TableColumn fx:id="franquicia" prefWidth="77.0" text="Franquicia" />
+            <TableColumn fx:id="telefono" prefWidth="77.0" text="Telefono" />
+            <TableColumn fx:id="ml" prefWidth="77.0" text="ML" />
+            <TableColumn fx:id="pastilla" prefWidth="77.0" text="N° pastillas" />
+        </columns>
+      </TableView>
+      <Button layoutX="537.0" layoutY="351.0" mnemonicParsing="false" onAction="#volver" text="Regresar" />
+   </children>
+</AnchorPane>
